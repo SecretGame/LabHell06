@@ -1,3 +1,34 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main ()
+{
+    string name,moviename,day,talk;
+    int Gear,studentID;
+    cout<<"Fahsai: Sawadee ka...Can you tell me your name?\n";
+    cout<<"?????: ";
+    getline(cin,name);
+    cout<<"Fahsai: Wow!!! "<< name << " is a really cool name.\n";
+    cout<<"Fahsai: I think you are an Engineering student. What is your student ID?\n";
+    cout<<name<<": ";
+    cin>> studentID;
+    cin.ignore();
+    Gear = (studentID/pow(10,7))-12;
+    cout<<"Fahsai: I think you may be GEAR "<<Gear<<". I have a free movie ticket for you."<<endl;
+    cout<<"Fahsai: Let's go to the cinema together!!!"<<endl;
+    cout<<"Fahsai: What movie do you want to watch?\n";
+    cout<<name<<": ";
+    getline(cin,moviename);
+    cout<<"Fahsai: So....which day are you free to go with me?\n";
+    cout<<name<<": ";
+    getline(cin,day);
+    cout<<"Fahsai: "<<day<< "....that is OK!!! I'm looking forward to watching "<<moviename<<" with you.\n";
+    cout<<name<<": ";
+    getline(cin,talk);
+    cout<<"Fahsai: 555+ see you "<<day<<". Bye Bye \\(^ ^)/";
+    return 0;
+}
 //Dialog of the first example is given below.
 
 /*
